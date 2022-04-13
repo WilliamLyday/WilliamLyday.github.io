@@ -1,41 +1,7 @@
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////
 <body>
-
-    <h1>WilliamLyday online resume</h1>
-    <p>
-        Hello, my name is William Lyday, this is a example portfolio page.
-    </p>
-
-
-    <h1>HigherLower game</h1>
-    <p>
-    Goal: Write a number guessing game, where a number is chosen between 1 and<br>
-    100. The user guesses, the game indicates higher, lower, or correct. The user<br>
-    continues to guess until correct. The score is always displayed as well as a top 10<br>
-    high scores list. If just finished game's score was within the top 10, this<br>
-    score should be displayed within that list.
-    </p>
-
-    <h2>Additional Requirements:</h2> 
-    <p>
-    Must support SSL/TLS certificates to provide secure connection<br>
-    Needs a typical login (sign up with new/existing)<br>
-    Needs a db to store user login data<br>
-    Needs a db to store all time high scores data<br>
-    Must have crptographically hashed password with unique salting at account creation<br>
-    </p>
-    <a href="http://williamlyday.epizy.com/higherLower/landing.php">Click here to try it out</a><br>
-    <p>NOTE: SSL cert may have expired in the mean time</p>
-    <a href="https://github.com/WilliamLyday/WilliamLyday.github.io/tree/main/higherLower">Click here to view the code</a>
-    <p>Here are some rough screenshots:</p>
-    <img src="/img/hl1.JPG" alt="higherlower index/login screen" width="900" height="300"/>
-    <br><br>
-    <img src="/img/hl2.JPG" alt="higherlower ex. gameStart screen" width="900" height="500"/>
-    <br><br>
-    <img src="/img/hl3.JPG" alt="higherlower ex gameOngoing screen" width="900" height="420"/>
-    <br><br><br> -->
-
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    Speed Game
+/////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <!-- <h1>Hangman game</h1>
     <p>Goal: Create a similar web stack application as the number guessing game,<br>
         except now it's the game of hangman.  The game itself should be played using an asynchronous UI<br>
@@ -103,7 +69,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>W3.CSS Template</title>
+    <title>William Lyday Online Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
@@ -135,37 +101,27 @@
           title="Toggle Navigation Menu"
           ><i class="fa fa-bars"></i
         ></a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">About Me!</a>
         <a
-          href="#band"
+          href="#higherLower"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-          >BAND</a
+          >HigherLower Game</a
         >
         <a
-          href="#tour"
+          href="#hangman"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-          >TOUR</a
+          >Hangman Game</a
         >
         <a
-          href="#contact"
+          href="#scholarship"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-          >CONTACT</a
+          >Scholarship project</a
         >
-        <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-padding-large w3-button" title="More">
-            MORE <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-            <a href="#" class="w3-bar-item w3-button">Extras</a>
-            <a href="#" class="w3-bar-item w3-button">Media</a>
-          </div>
-        </div>
         <a
-          href="javascript:void(0)"
-          class="w3-padding-large w3-hover-red w3-hide-small w3-right"
-          ><i class="fa fa-search"></i
-        ></a>
+          href="#speed"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >Speed Game</a
+        >
       </div>
     </div>
 
@@ -176,22 +132,28 @@
       style="margin-top: 46px"
     >
       <a
-        href="#band"
+        href="#higherLower"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
-        >BAND</a
+        >HigherLower Game</a
       >
       <a
-        href="#tour"
+        href="#hangman"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
-        >TOUR</a
+        >Hangman Game</a
       >
       <a
-        href="#contact"
+        href="#scholarship"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
-        >CONTACT</a
+        >Scholarship project</a
+      >
+      <a
+        href="#speed"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >Speed Game</a
       >
       <a
         href="#"
@@ -283,200 +245,6 @@
           </div>
         </div>
       </div>
-
-      <!-- The Tour Section -->
-      <div class="w3-black" id="tour">
-        <div
-          class="w3-container w3-content w3-padding-64"
-          style="max-width: 800px"
-        >
-          <h2 class="w3-wide w3-center">TOUR DATES</h2>
-          <p class="w3-opacity w3-center">
-            <i>Remember to book your tickets!</i>
-          </p>
-          <br />
-
-          <ul class="w3-ul w3-border w3-white w3-text-grey">
-            <li class="w3-padding">
-              September
-              <span class="w3-tag w3-red w3-margin-left">Sold out</span>
-            </li>
-            <li class="w3-padding">
-              October <span class="w3-tag w3-red w3-margin-left">Sold out</span>
-            </li>
-            <li class="w3-padding">
-              November <span class="w3-badge w3-right w3-margin-right">3</span>
-            </li>
-          </ul>
-
-          <div class="w3-row-padding w3-padding-32" style="margin: 0 -16px">
-            <div class="w3-third w3-margin-bottom">
-              <img
-                src="/w3images/newyork.jpg"
-                alt="New York"
-                style="width: 100%"
-                class="w3-hover-opacity"
-              />
-              <div class="w3-container w3-white">
-                <p><b>New York</b></p>
-                <p class="w3-opacity">Fri 27 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <button
-                  class="w3-button w3-black w3-margin-bottom"
-                  onclick="document.getElementById('ticketModal').style.display='block'"
-                >
-                  Buy Tickets
-                </button>
-              </div>
-            </div>
-            <div class="w3-third w3-margin-bottom">
-              <img
-                src="/w3images/paris.jpg"
-                alt="Paris"
-                style="width: 100%"
-                class="w3-hover-opacity"
-              />
-              <div class="w3-container w3-white">
-                <p><b>Paris</b></p>
-                <p class="w3-opacity">Sat 28 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <button
-                  class="w3-button w3-black w3-margin-bottom"
-                  onclick="document.getElementById('ticketModal').style.display='block'"
-                >
-                  Buy Tickets
-                </button>
-              </div>
-            </div>
-            <div class="w3-third w3-margin-bottom">
-              <img
-                src="/w3images/sanfran.jpg"
-                alt="San Francisco"
-                style="width: 100%"
-                class="w3-hover-opacity"
-              />
-              <div class="w3-container w3-white">
-                <p><b>San Francisco</b></p>
-                <p class="w3-opacity">Sun 29 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <button
-                  class="w3-button w3-black w3-margin-bottom"
-                  onclick="document.getElementById('ticketModal').style.display='block'"
-                >
-                  Buy Tickets
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Ticket Modal -->
-      <div id="ticketModal" class="w3-modal">
-        <div class="w3-modal-content w3-animate-top w3-card-4">
-          <header class="w3-container w3-teal w3-center w3-padding-32">
-            <span
-              onclick="document.getElementById('ticketModal').style.display='none'"
-              class="w3-button w3-teal w3-xlarge w3-display-topright"
-              >×</span
-            >
-            <h2 class="w3-wide">
-              <i class="fa fa-suitcase w3-margin-right"></i>Tickets
-            </h2>
-          </header>
-          <div class="w3-container">
-            <p>
-              <label
-                ><i class="fa fa-shopping-cart"></i> Tickets, $15 per
-                person</label
-              >
-            </p>
-            <input
-              class="w3-input w3-border"
-              type="text"
-              placeholder="How many?"
-            />
-            <p>
-              <label><i class="fa fa-user"></i> Send To</label>
-            </p>
-            <input
-              class="w3-input w3-border"
-              type="text"
-              placeholder="Enter email"
-            />
-            <button
-              class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right"
-            >
-              PAY <i class="fa fa-check"></i>
-            </button>
-            <button
-              class="w3-button w3-red w3-section"
-              onclick="document.getElementById('ticketModal').style.display='none'"
-            >
-              Close <i class="fa fa-remove"></i>
-            </button>
-            <p class="w3-right">
-              Need <a href="#" class="w3-text-blue">help?</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- The Contact Section -->
-      <div
-        class="w3-container w3-content w3-padding-64"
-        style="max-width: 800px"
-        id="contact"
-      >
-        <h2 class="w3-wide w3-center">CONTACT</h2>
-        <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-        <div class="w3-row w3-padding-32">
-          <div class="w3-col m6 w3-large w3-margin-bottom">
-            <i class="fa fa-map-marker" style="width: 30px"></i> Chicago, US<br />
-            <i class="fa fa-phone" style="width: 30px"></i> Phone: +00 151515<br />
-            <i class="fa fa-envelope" style="width: 30px"> </i> Email:
-            mail@mail.com<br />
-          </div>
-          <div class="w3-col m6">
-            <form action="/action_page.php" target="_blank">
-              <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
-                <div class="w3-half">
-                  <input
-                    class="w3-input w3-border"
-                    type="text"
-                    placeholder="Name"
-                    required
-                    name="Name"
-                  />
-                </div>
-                <div class="w3-half">
-                  <input
-                    class="w3-input w3-border"
-                    type="text"
-                    placeholder="Email"
-                    required
-                    name="Email"
-                  />
-                </div>
-              </div>
-              <input
-                class="w3-input w3-border"
-                type="text"
-                placeholder="Message"
-                required
-                name="Message"
-              />
-              <button
-                class="w3-button w3-black w3-section w3-right"
-                type="submit"
-              >
-                SEND
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
       <!-- End Page Content -->
     </div>
 
