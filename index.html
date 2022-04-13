@@ -1,243 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>William Lyday Online Portfolio</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <style>
-      body {
-        font-family: "Lato", sans-serif;
-      }
-      .mySlides {
-        display: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <div class="w3-top">
-      <div class="w3-bar w3-black w3-card">
-        <a
-          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-          href="javascript:void(0)"
-          onclick="myFunction()"
-          title="Toggle Navigation Menu"
-          ><i class="fa fa-bars"></i
-        ></a>
-        <a
-          href="#higherLower"
-          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-          >HigherLower Game</a
-        >
-        <a
-          href="#hangman"
-          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-          >Hangman Game</a
-        >
-        <a
-          href="#scholarship"
-          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-          >Scholarship project</a
-        >
-        <a
-          href="#speed"
-          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-          >Speed Game</a
-        >
+   <head>
+      <title>William Lyday Online Portfolio</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <style>
+         body {
+         font-family: "Lato", sans-serif;
+         }
+         .mySlides {
+         display: none;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Navbar -->
+      <div class="w3-top">
+         <div class="w3-bar w3-black w3-card">
+            <a
+               class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+               href="javascript:void(0)"
+               onclick="myFunction()"
+               title="Toggle Navigation Menu"
+               ><i class="fa fa-bars"></i
+               ></a>
+            <a
+               href="#higherLower"
+               class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+               >HigherLower Game</a
+               >
+            <a
+               href="#hangman"
+               class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+               >Hangman Game</a
+               >
+            <a
+               href="#scholarship"
+               class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+               >Scholarship project</a
+               >
+            <a
+               href="#speed"
+               class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+               >Speed Game</a
+               >
+         </div>
       </div>
-    </div>
-
-    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-    <div
-      id="navDemo"
-      class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
-      style="margin-top: 46px"
-    >
-      <a
-        href="#higherLower"
-        class="w3-bar-item w3-button w3-padding-large"
-        onclick="myFunction()"
-        >HigherLower Game</a
-      >
-      <a
-        href="#hangman"
-        class="w3-bar-item w3-button w3-padding-large"
-        onclick="myFunction()"
-        >Hangman Game</a
-      >
-      <a
-        href="#scholarship"
-        class="w3-bar-item w3-button w3-padding-large"
-        onclick="myFunction()"
-        >Scholarship project</a
-      >
-      <a
-        href="#speed"
-        class="w3-bar-item w3-button w3-padding-large"
-        onclick="myFunction()"
-        >Speed Game</a
-      >
-    </div>
-
-    <!-- Page content -->
-    <div class="w3-content" style="max-width: 2000px; margin-top: 46px">
-      <!-- The higherLower Section -->
+      <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
       <div
-        class="w3-container w3-content w3-center w3-padding-64"
-        style="max-width: 800px"
-        id="higherLower"
-      >
-        <h2 class="w3-wide">HIGHERLOWER</h2>
-        <p class="w3-opacity"><i>A number guessing game</i></p>
-        <p class="w3-justify">
-          Goal: Write a number guessing game, where a number is chosen between 1
-          and 100. The user guesses, the game indicates higher, lower, or
-          correct. The user continues to guess until correct. The score is
-          always displayed as well as a top 10 high scores list. If just
-          finished game's score was within the top 10, this score should be
-          displayed within that list.
-        </p>
-        <h3 class="w3-wide">Additional Requirements</h3>
-        <p class="w3-justify">
-          Must support SSL/TLS certificates to provide secure connection<br />
-          Needs a typical login (sign up with new/existing)<br />
-          Needs a db to store user login data<br />
-          Needs a db to store all time high scores data<br />
-          Must have crptographically hashed password with unique salting at
-          account creation.
-        </p>
-        <h3 class="w3-wide">Technologies Used</h3>
-        <p class="w3-wide">
-            HTML, CSS, MySQL, PHP, Notepad++ (IDE)
-        </p>
-        <h3 class="w3-wide">Screenshots:</h3>
-        <img src="/img/hl1.JPG" alt="higherlower index/login screen"/>
-        <img src="/img/hl2.JPG" alt="higherlower ex. gameStart screen"/>
-        <img src="/img/hl3.JPG" alt="higherlower ex gameOngoing screen"/>
-        <p>NOTE: SSL cert may have expired in the mean time</p>
-        <a href="http://williamlyday.epizy.com/higherLower/landing.php">Click here to try it out</a><br>
-        <a href="https://github.com/WilliamLyday/WilliamLyday.github.io/tree/main/higherLower">Click here to view the code</a>
+         id="navDemo"
+         class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+         style="margin-top: 46px"
+         >
+         <a
+            href="#higherLower"
+            class="w3-bar-item w3-button w3-padding-large"
+            onclick="myFunction()"
+            >HigherLower Game</a
+            >
+         <a
+            href="#hangman"
+            class="w3-bar-item w3-button w3-padding-large"
+            onclick="myFunction()"
+            >Hangman Game</a
+            >
+         <a
+            href="#scholarship"
+            class="w3-bar-item w3-button w3-padding-large"
+            onclick="myFunction()"
+            >Scholarship project</a
+            >
+         <a
+            href="#speed"
+            class="w3-bar-item w3-button w3-padding-large"
+            onclick="myFunction()"
+            >Speed Game</a
+            >
       </div>
-
+      <!-- Page content -->
+      <div class="w3-content" style="max-width: 2000px; margin-top: 46px">
+         <!-- The higherLower Section -->
+         <div
+            class="w3-container w3-content w3-center w3-padding-64"
+            style="max-width: 800px"
+            id="higherLower"
+            >
+            <h2 class="w3-wide">HIGHERLOWER</h2>
+            <p class="w3-opacity"><i>A number guessing game</i></p>
+            <p class="w3-justify">
+               Goal: Write a number guessing game, where a number is chosen between 1
+               and 100. The user guesses, the game indicates higher, lower, or
+               correct. The user continues to guess until correct. The score is
+               always displayed as well as a top 10 high scores list. If just
+               finished game's score was within the top 10, this score should be
+               displayed within that list.
+            </p>
+            <h3 class="w3-wide">Additional Requirements</h3>
+            <p class="w3-justify">
+               Must support SSL/TLS certificates to provide secure connection<br />
+               Needs a typical login (sign up with new/existing)<br />
+               Needs a db to store user login data<br />
+               Needs a db to store all time high scores data<br />
+               Must have crptographically hashed password with unique salting at
+               account creation.
+            </p>
+            <h3 class="w3-wide">Technologies Used</h3>
+            <p class="w3-wide">
+               HTML, CSS, MySQL, PHP, Notepad++ (IDE)
+            </p>
+         </div>
+         <h3 class="w3-wide">Screenshots:</h3>
+            <img src="/img/hl1.JPG" alt="higherlower index/login screen"/>
+            <img src="/img/hl2.JPG" alt="higherlower ex. gameStart screen"/>
+            <img src="/img/hl3.JPG" alt="higherlower ex gameOngoing screen"/>
+            <p>NOTE: SSL cert may have expired in the mean time</p>
+            <a href="http://williamlyday.epizy.com/higherLower/landing.php">Click here to try it out</a><br>
+            <a href="https://github.com/WilliamLyday/WilliamLyday.github.io/tree/main/higherLower">Click here to view the code</a>
+      </div>
       <!-- The hangman Section -->
       <div
-        class="w3-container w3-content w3-center w3-padding-64"
-        style="max-width: 800px"
-        id="hangman"
-      >
-        <h2 class="w3-wide">HANGMAN</h2>
-        <p class="w3-opacity"><i>A letter guessing game</i></p>
-        <p class="w3-justify">
-          Goal: Create a similar web stack application as the number guessing
-          game, except now it's the game of hangman. The game itself should be
-          played using an asynchronous UI A guess should not be
-          redirected/posted/getted to a new page which generates a new next
-          phase page. Either use AJAX (client side directed asynchronous) or use
-          websockets. Self/Free hosting are options.
-        </p>
-        <h3 class="w3-wide">Additional Requirements</h3>
-        <p class="w3-justify">
-          Must support SSL/TLS certificates to provide secure connection<br />
-          Needs a typical login (sign up with new/existing)<br />
-          Needs a db to store user login data<br />
-          Needs a db to store all time high scores data<br />
-          Must have crptographically hashed password with unique salting at
-          account creation<br />
-          Must use a different stack; You can choose .NET or Java, but don't use
-          a stack 3+ years old<br />
-        </p>
-        <h3 class="w3-wide">Technologies Used</h3>
-        <p class="w3-wide">
+         class="w3-container w3-content w3-center w3-padding-64"
+         style="max-width: 800px"
+         id="hangman"
+         >
+         <h2 class="w3-wide">HANGMAN</h2>
+         <p class="w3-opacity"><i>A letter guessing game</i></p>
+         <p class="w3-justify">
+            Goal: Create a similar web stack application as the number guessing
+            game, except now it's the game of hangman. The game itself should be
+            played using an asynchronous UI A guess should not be
+            redirected/posted/getted to a new page which generates a new next
+            phase page. Either use AJAX (client side directed asynchronous) or use
+            websockets. Self/Free hosting are options.
+         </p>
+         <h3 class="w3-wide">Additional Requirements</h3>
+         <p class="w3-justify">
+            Must support SSL/TLS certificates to provide secure connection<br />
+            Needs a typical login (sign up with new/existing)<br />
+            Needs a db to store user login data<br />
+            Needs a db to store all time high scores data<br />
+            Must have crptographically hashed password with unique salting at
+            account creation<br />
+            Must use a different stack; You can choose .NET or Java, but don't use
+            a stack 3+ years old<br />
+         </p>
+         <h3 class="w3-wide">Technologies Used</h3>
+         <p class="w3-wide">
             ASP.NET, Blazor, EF Core, Visual Studio 2022 (IDE)
-        </p>
-        <img src="/img/hmGif.gif" class="w3-image" alt="hangman game showcase" style="width:100%"/>
-        <a href="https://github.com/JohnnySixStrings/crumbs">Click here to view the code</a>
+         </p>
       </div>
-
-      
-
+      <div class="w3-content" style="max-width: 2000px; margin-top: 46px">
+         <img src="/img/hmGif.gif" class="w3-image" alt="hangman game showcase" style="width:100%"/>
+         <a href="https://github.com/JohnnySixStrings/crumbs">Click here to view the code</a>
+      </div>
       <!-- The scholarship Section -->
       <div
-        class="w3-container w3-content w3-center w3-padding-64"
-        style="max-width: 800px"
-        id="scholarship"
-      >
-        <h2 class="w3-wide">The Scholarship Project</h2>
-        <p class="w3-opacity"><i>A bug-fixing and updating game</i></p>
-        <p class="w3-justify">need to add description here</p>
-        <h3 class="w3-wide">Additional Requirements</h3>
-        <p class="w3-justify">do i need anything here? not sure yet</p>
-        <h3 class="w3-wide">Technologies Used</h3>
-        <p class="w3-wide">
+         class="w3-container w3-content w3-center w3-padding-64"
+         style="max-width: 800px"
+         id="scholarship"
+         >
+         <h2 class="w3-wide">The Scholarship Project</h2>
+         <p class="w3-opacity"><i>A bug-fixing and updating game</i></p>
+         <p class="w3-justify">need to add description here</p>
+         <h3 class="w3-wide">Additional Requirements</h3>
+         <p class="w3-justify">do i need anything here? not sure yet</p>
+         <h3 class="w3-wide">Technologies Used</h3>
+         <p class="w3-wide">
             .NET, Entity DB / MSSQL, Razor, Visual Studio (IDE) 
-        </p>
-        <img src="/img/swGif.gif" alt="schloarship project showcase" style="width:100%"/>
-        <a href="https://github.com/JohnnySixStrings/crumbs">Click here to view the code</a>
+         </p>
       </div>
-
+      <div class="w3-content" style="max-width: 2000px; margin-top: 46px">
+         <img src="/img/swGif.gif" alt="schloarship project showcase" style="width:100%"/>
+         <a href="https://github.com/JohnnySixStrings/crumbs">Click here to view the code</a>
+      </div>
       <!-- The speed Section -->
       <div
-        class="w3-container w3-content w3-center w3-padding-64"
-        style="max-width: 800px"
-        id="speed"
-      >
-        <h2 class="w3-wide">SPEED</h2>
-        <p class="w3-opacity"><i>A action-pacted card game</i></p>
-        <p class="w3-justify">
-          Goal: Create an application in which two different sessions can
-          connect (such as two different browsers on the same computer, or two
-          different computers) and play the game of speed with each other. Game
-          logic is: Shuffle a 52 card deck. Deal 20 cards to both players. Make
-          4 piles in the middle of the table with 5, 1, 1, 5 cards in each
-          central pile respectively from left to right. The central middle piles
-          get flipped face up and each player draws up to 5 cards at any point
-          from their piles of 20. The goal is to place cards on the two central
-          middle piles until the 20 card player deck is fully depleated. The
-          first player to completely get rid of their 20 card deck wins. Cards
-          can only be placed on the face up cards in the middle if their value
-          is +1 or -1 the face value of the middle cards, regardless of suite.
-          (ie 3 of diamonds can be played on 2 of spades or 4 of hearts). In the
-          case neither player has a valid move the piles of 5 on the sides in
-          the middle are the reserve being flipped over and giving a new set of
-          playable central cards.
-        </p>
-        <h3 class="w3-wide">Additional Requirements</h3>
-        <p class="w3-justify">
-          The game must be visual and use visual card images.<br />
-          An integer should display indicating the total number of cards left in
-          each player's deck.<br />
-          The game must display the winner on both screens when complete.<br />
-          Upon completing the game, the players must be given the choice to play
-          again.<br />
-          Play resumes if both vote yes.<br />
-          Game must be mobile UI friendly.<br />
-          The game must have a different shuffle of cards each game play.<br />
-          The game must work within different browsers and be asynchronous,<br />
-          using websockets to transmit data back and forth via a server.
-        </p>
-        <h3 class="w3-wide">Technologies Used</h3>
-        <p class="w3-wide">
+         class="w3-container w3-content w3-center w3-padding-64"
+         style="max-width: 800px"
+         id="speed"
+         >
+         <h2 class="w3-wide">SPEED</h2>
+         <p class="w3-opacity"><i>A action-pacted card game</i></p>
+         <p class="w3-justify">
+            Goal: Create an application in which two different sessions can
+            connect (such as two different browsers on the same computer, or two
+            different computers) and play the game of speed with each other. Game
+            logic is: Shuffle a 52 card deck. Deal 20 cards to both players. Make
+            4 piles in the middle of the table with 5, 1, 1, 5 cards in each
+            central pile respectively from left to right. The central middle piles
+            get flipped face up and each player draws up to 5 cards at any point
+            from their piles of 20. The goal is to place cards on the two central
+            middle piles until the 20 card player deck is fully depleated. The
+            first player to completely get rid of their 20 card deck wins. Cards
+            can only be placed on the face up cards in the middle if their value
+            is +1 or -1 the face value of the middle cards, regardless of suite.
+            (ie 3 of diamonds can be played on 2 of spades or 4 of hearts). In the
+            case neither player has a valid move the piles of 5 on the sides in
+            the middle are the reserve being flipped over and giving a new set of
+            playable central cards.
+         </p>
+         <h3 class="w3-wide">Additional Requirements</h3>
+         <p class="w3-justify">
+            The game must be visual and use visual card images.<br />
+            An integer should display indicating the total number of cards left in
+            each player's deck.<br />
+            The game must display the winner on both screens when complete.<br />
+            Upon completing the game, the players must be given the choice to play
+            again.<br />
+            Play resumes if both vote yes.<br />
+            Game must be mobile UI friendly.<br />
+            The game must have a different shuffle of cards each game play.<br />
+            The game must work within different browsers and be asynchronous,<br />
+            using websockets to transmit data back and forth via a server.
+         </p>
+         <h3 class="w3-wide">Technologies Used</h3>
+         <p class="w3-wide">
             ASP.NET, SignalR, Angular, Visual Studio 2022 (IDE), Visual Studio Code (IDE)
-        </p>
-        <img src="/img/sGif.gif" alt="speed game showcase" style="width:100%"/>
-        <a href="https://github.com/JohnnySixStrings/crumbs">Click here to view the code</a>
+         </p>
+      </div>
+      <div class="w3-content" style="max-width: 2000px; margin-top: 46px">
+         <img src="/img/sGif.gif" alt="speed game showcase" style="width:100%"/>
+         <a href="https://github.com/JohnnySixStrings/crumbs">Click here to view the code</a>
       </div>
       <!-- End Page Content -->
-    </div>
-  </body>
-
-  <script>
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
+      </div>
+   </body>
+   <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
       }
-    }
-  </script>
+   </script>
 </html>
